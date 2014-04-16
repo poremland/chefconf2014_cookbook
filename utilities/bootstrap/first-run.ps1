@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::ServerCertificateValidationCallback = {$true};iex ((new-object net.webclient).DownloadString('https://your.server.com/your-bootstrap'))"
